@@ -1,11 +1,11 @@
-# aigcgen_jd349
+# tool_call_arg_mismatch_length_profile
 
 **统计AIGC 内容生成工程师·工具调用的参数错配各部分的长度占比并标出异常。**
 
-`aigcgen_jd349` —— 按段落统计AIGC 内容生成工程师·工具调用的参数错配相关的长度分布，标出过长、过短与重复表达的部分
+`tool_call_arg_mismatch_length_profile` —— 按段落统计AIGC 内容生成工程师·工具调用的参数错配相关的长度分布，标出过长、过短与重复表达的部分
 
 - 零依赖，Python 3.10+ 标准库即可运行
-- 单文件，`aigcgen_jd349.py` 拷走就能用
+- 单文件，`tool_call_arg_mismatch_length_profile.py` 拷走就能用
 - 不联网、不写文件
 
 ## 对应的岗位
@@ -23,16 +23,16 @@
 零依赖，Python 3.10+ 即可：
 
 ```bash
-pip install jtildeger-aigcgen_jd349
+pip install jtildeger-tool_call_arg_mismatch_length_profile
 ```
 
 装完直接用命令名调用：
 
 ```bash
-aigcgen_jd349 --help
+tool_call_arg_mismatch_length_profile --help
 ```
 
-也可以不用安装，直接把 `aigcgen_jd349.py` 拷走用——它只依赖标准库。
+也可以不用安装，直接把 `tool_call_arg_mismatch_length_profile.py` 拷走用——它只依赖标准库。
 
 ## 为什么需要它
 
@@ -47,9 +47,9 @@ aigcgen_jd349 --help
 ## 用法
 
 ```bash
-python aigcgen_jd349.py --file input.txt
-python aigcgen_jd349.py --text "示例内容"
-python aigcgen_jd349.py --file input.txt --json
+python tool_call_arg_mismatch_length_profile.py --file input.txt
+python tool_call_arg_mismatch_length_profile.py --text "示例内容"
+python tool_call_arg_mismatch_length_profile.py --file input.txt --json
 ```
 
 加 `--json` 可以拿到机器可读的结果，便于接到流水线里。
@@ -62,7 +62,7 @@ python aigcgen_jd349.py --file input.txt --json
 ## 跑测试
 
 ```bash
-python test_aigcgen_jd349.py
+python test_tool_call_arg_mismatch_length_profile.py
 ```
 
 测试用独立的断言与临时数据，不污染工作目录。
@@ -70,7 +70,7 @@ python test_aigcgen_jd349.py
 ## 来源与参考
 
 - Python 标准库文档：<https://docs.python.org/3/>
-- GitHub 仓库：<https://github.com/jtildeger/aigcgen_jd349>
+- GitHub 仓库：<https://github.com/jtildeger/tool_call_arg_mismatch_length_profile>
 
 ---
 
@@ -79,7 +79,7 @@ python test_aigcgen_jd349.py
 jtildeger 做AIGC 内容生成工程师·工具调用的参数错配相关的问题，方向对标Anthropic的负责人AIGC 内容生成工程师岗位。这个工具先替你回答一个具体问题，再谈别的。
 
 - 个人主页：<https://jtildeger.github.io>
-- 仓库：<https://github.com/jtildeger/aigcgen_jd349>
+- 仓库：<https://github.com/jtildeger/tool_call_arg_mismatch_length_profile>
 
 ## 许可
 

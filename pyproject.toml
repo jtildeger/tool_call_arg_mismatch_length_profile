@@ -3,7 +3,7 @@ requires = ["setuptools>=61"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "jtildeger-aigcgen_jd349"
+name = "jtildeger-tool_call_arg_mismatch_length_profile"
 version = "0.1.0"
 description = "按段落统计AIGC 内容生成工程师·工具调用的参数错配相关的长度分布，标出过长、过短与重复表达的部分"
 readme = "README.md"
@@ -22,11 +22,11 @@ classifiers = [
 
 [project.urls]
 Homepage = "https://jtildeger.github.io"
-Repository = "https://github.com/jtildeger/aigcgen_jd349"
-Issues = "https://github.com/jtildeger/aigcgen_jd349/issues"
+Repository = "https://github.com/jtildeger/tool_call_arg_mismatch_length_profile"
+Issues = "https://github.com/jtildeger/tool_call_arg_mismatch_length_profile/issues"
 
 [project.scripts]
-aigcgen_jd349 = "aigcgen_jd349:main"
+tool_call_arg_mismatch_length_profile = "tool_call_arg_mismatch_length_profile:main"
 
 [tool.setuptools]
-py-modules = ["aigcgen_jd349"]
+py-modules = ["tool_call_arg_mismatch_length_profile"]
